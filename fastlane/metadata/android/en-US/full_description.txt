@@ -1,0 +1,3 @@
+This apps let's you open the weather view of the Google App, instead of adding the shortcut to the homescreen.
+This is helpfull if you want to customize your icons and your launcher doesn't support custom icons for Shortcuts.
+It is also possible that the icon from an iconpack is automatically applied.
