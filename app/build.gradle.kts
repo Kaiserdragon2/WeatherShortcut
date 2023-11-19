@@ -27,8 +27,18 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+    }
+        applicationVariants.all {
+            outputs
+                // default type don't have outputFileName field
+                .map { it as com.android.build.gradle.internal.api.ApkVariantOutputImpl }
+                .all { output ->
+                    output.outputFileName = "WeatherShortcut-${buildType.name}-${versionName}.apk"
+                    false
+                }
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
