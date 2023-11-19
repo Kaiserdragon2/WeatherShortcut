@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun isWeatherAppInstalled(): Boolean {
-        val packageName = "com.google.apple.googlequicksearchbox"
+        val packageName = "com.google.android.googlequicksearchbox"
         val activityName = "com.google.android.apps.search.weather.WeatherExportedActivity"
         val pm: PackageManager = packageManager
         val intent = Intent().apply {
