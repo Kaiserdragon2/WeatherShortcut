@@ -9,3 +9,6 @@ Then you can use this app to replace the shortcut.
 ## Requirements
 
 The Google app must be installed.
+
+## License
+The app is licensed under the MIT License.
