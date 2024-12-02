@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "de.kaiserdragon.weathershortcut"
+        vectorDrawables.generatedDensities = []
         minSdk = 24
         targetSdk = 34
         versionCode = 4
@@ -18,6 +19,13 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+
+    dependenciesInfo {
+        // Disables dependency metadata when building APKs.
+        includeInApk = false
+        // Disables dependency metadata when building Android App Bundles.
+        includeInBundle = false
     }
 
     buildTypes {
